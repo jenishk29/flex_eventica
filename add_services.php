@@ -8,8 +8,9 @@ if (isset($_REQUEST['AddService'])) {
         $service_image=$_REQUEST['ServiceImage'];
         $package_limit=$_REQUEST['PackageLimit'];
         $packageslug=$_REQUEST['PackageSlug'];
-        echo $insert_service= 'insert into tbl_services(fsServiceName,fsServiceImage, fiPackageLimit, fsSlug , fdCreatedDate) values("'.$service_name.'","'.$service_image.'","'.$package_limit.'","'.$packageslug.'","'.date('Y-m-d').'")';die;
+        echo $insert_service= 'insert into tbl_services(fsServiceName,fsServiceImage, fiPackageLimit, fsSlug , fdCreatedDate) values("'.$service_name.'","'.$service_image.'","'.$package_limit.'","'.$packageslug.'","'.date('Y-m-d').'")';
         $service_result = mysqli_query($con,$insert_service);
+        echo "nikunj";die;
        /* header('location:index.php');*/
     }
 ?>
