@@ -32,7 +32,7 @@ if (isset($_REQUEST['AddService'])) {
                                                             <label>Service Image</label>
                                                             <input type="file" class="form-control" placeholder="Service Image" name="ServiceImage">
                                                         </div>
-                                                        <div class="form-group">
+                                                        <div class="form-group   ">
                                                             <label>Package Limit</label>
                                                             <input type="number" class="form-control" placeholder="Package Limit" name="PackageLimit">
                                                         </div>
